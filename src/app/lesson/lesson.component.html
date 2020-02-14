@@ -1,0 +1,28 @@
+<h1>{{item.title}}</h1>
+<ng-template [ngIf]="item.type === 0">
+  <vg-player>
+    <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls>
+      <source [src]="item?.source" type="video/mp4">
+    </video>
+  </vg-player>
+</ng-template>
+<ng-template [ngIf]="item.type === 1">
+  <vg-player>
+    <vg-controls>
+      <vg-play-pause></vg-play-pause>
+      <vg-playback-button></vg-playback-button>
+      <vg-scrub-bar>
+          <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+          <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+      </vg-scrub-bar>
+
+      <vg-time-display vgProperty="left" vgFormat="mm:ss"></vg-time-display>
+      <vg-volume></vg-volume>
+      <vg-mute></vg-mute>
+
+    </vg-controls>
+    <audio [vgMedia]="media" #media id="singleAudio" preload="auto" controls>
+      <source [src]="item?.source" type="audio/ogg">
+    </audio>
+  </vg-player>
+</ng-template>

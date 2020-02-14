@@ -1,0 +1,11 @@
+<ul class="lessons">
+  <li *ngFor="let item of lessons; let i = index">
+    <span class="icon" >
+      <i class="fa" [ngClass]="misk[i].class"></i>
+    </span>
+    <span class="h2">{{ item.title }}</span>
+    <a [routerLink]="item.url" class="btn-action">
+      {{ misk[i].name }}
+    </a>
+  </li>
+</ul>
