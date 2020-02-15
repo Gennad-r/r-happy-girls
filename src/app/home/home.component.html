@@ -1,11 +1,10 @@
-<ul class="lessons">
-  <li *ngFor="let item of lessons; let i = index">
-    <span class="icon" >
-      <i class="fa" [ngClass]="misk[i].class"></i>
-    </span>
-    <span class="h2">{{ item.title }}</span>
-    <a [routerLink]="item.url" class="btn-action">
-      {{ misk[i].name }}
-    </a>
-  </li>
-</ul>
+<div class="lessons row">
+  <div *ngFor="let item of lessons; let i = index" class="col-xl-3 col-lg-4 col-sm-6 col-12 card">
+    <div class="inner-card" [routerLink]="['/'+item.url]">
+      <span class="icon" >
+        <i class="fa" [ngClass]="misk[i].class"></i>
+      </span>
+      <span class="h2">Сторінка {{ item.id }}</span>
+    </div>
+  </div>
+</div>

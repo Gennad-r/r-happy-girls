@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { ILesson } from '../I-lesson';
 
 @Component({
   selector: 'app-audio',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./audio.component.scss']
 })
 export class AudioComponent implements OnInit {
+  @Input() item: ILesson;
 
   constructor() { }
 

@@ -1,41 +1,35 @@
-ul, li {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-$bg: var(--bg-color);
-
 .lessons {
-  li {
+  .inner-card {
     display: flex;
     align-items: center;
     padding: 12px 15px;
-    background-color: #fff;
-    &:not(:last-child) {
-      margin-bottom: 5px;
+    background-color: rgba(#fff, 0.7);
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+      background-color: #fff;
+      box-shadow: 0 0 5px rgba(#000, 0.3);
+      .icon {
+        color: var(--dark);
+      }
     }
   }
   .icon {
     margin-right: 15px;
     display: inline-block;
+    transition: 0.3s;
   }
   .h2 {
     display: inline-block;
-  }
-  .btn-action {
-    text-align: center;
-    padding: 7px 10px;
-    text-decoration: none;
-    min-width: 100px;
-    display: block;
     margin-left: auto;
-    background-color: $bg;
-    color: #fff;
-    transition: box-shadow 0.3s;
-    &:hover {
-      box-shadow: 0 0 5px rgba(#000, 0.7);
-    }
-
   }
+}
+.card {
+  margin-bottom: 15px;
+}
+.girl {
+  display: block;
+  width: 100%;
+  margin-bottom: -1rem;
+  margin-top: -2rem;
 }

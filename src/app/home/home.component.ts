@@ -37,9 +37,7 @@ export class HomeComponent implements OnInit {
           });
           break;
         default:
-          console.log('Type error!');
       }
     });
-    console.log(this.misk);
   }
 }

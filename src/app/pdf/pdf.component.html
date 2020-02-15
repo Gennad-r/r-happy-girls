@@ -1,1 +1,8 @@
-<p>pdf works!</p>
+<pdf-viewer 
+    [src]="item.source" 
+    [render-text]="true"
+    [original-size]="false"
+    [rotation]="item.id === 9 ? 90 : 0"
+    style="display: block;"
+  ></pdf-viewer>
+  <div class="download"><a [href]="'/'+item.source" [download]="item.url+'.pdf'" class="btn-action">Скачати</a></div>

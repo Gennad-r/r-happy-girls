@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClientModule }    from '@angular/common/http'
 
 // videogular
 import {VgCoreModule} from 'videogular2/compiled/core';
@@ -41,7 +42,8 @@ import { LessonComponent } from './lesson/lesson.component';
     VgCoreModule,
     VgControlsModule,
     VgOverlayPlayModule,
-    PdfViewerModule
+    PdfViewerModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

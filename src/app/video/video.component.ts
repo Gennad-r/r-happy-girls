@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { ILesson } from '../I-lesson';
 
 @Component({
   selector: 'app-video',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./video.component.scss']
 })
 export class VideoComponent implements OnInit {
-
+@Input() item: ILesson;
   constructor() { }
 
   ngOnInit(): void {
