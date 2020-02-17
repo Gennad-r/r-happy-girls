@@ -6,7 +6,7 @@ export const data: ILesson[] = [
     url: 'shablon-dlia-rozdrukivky-treker-zvychok',
     source: 'assets/S_ 9.pdf',
     type: 2,
-    title: 'Шаблон для роздруківки. Трекер звичок'
+    title: 'Шаблон для роздруківки «Трекер звичок»'
   },
   {
     id: 25,
@@ -34,7 +34,7 @@ export const data: ILesson[] = [
     url: 'rezultaty-testu-mii-temperament',
     source: 'assets/S_35.pdf',
     type: 2,
-    title: 'Результати тесту. Мій темперамент'
+    title: 'Результати тесту «Мій темперамент»'
   },
   {
     id: 44,
@@ -48,14 +48,14 @@ export const data: ILesson[] = [
     url: 'audiozapys-do-tekhniky-moie-bezpechne-mistse',
     source: 'assets/S_54',
     type: 1,
-    title: 'Аудіозапис до техніки. Моє безпечне місце'
+    title: 'Аудіозапис до техніки «Моє безпечне місце»'
   },
   {
     id: 81,
     url: 'rezultaty-testu-moia-supersyla',
     source: 'assets/S_81.pdf',
     type: 2,
-    title: 'Результати тесту. Моя суперсила'
+    title: 'Результати тесту «Моя суперсила»'
   },
   {
     id: 117,
@@ -69,14 +69,14 @@ export const data: ILesson[] = [
     url: 'audiozapys-do-tekhniky-avtobiohrafiia',
     source: 'assets/S_123',
     type: 1,
-    title: 'Аудіозапис до техніки. Автобіографія'
+    title: 'Аудіозапис до техніки «Автобіографія»'
   },
   {
     id: 137,
     url: 'shcho-oznachaiut-litery-tvoho-imeni',
     source: 'assets/S_137.pdf',
     type: 2,
-    title: 'Що означають літери твого імені'
+    title: 'Що означають літери твого імені?'
   },
   {
     id: 142,
@@ -90,7 +90,7 @@ export const data: ILesson[] = [
     url: 'rezultaty-testu-moia-samootsinka',
     source: 'assets/S_161.pdf',
     type: 2,
-    title: 'Результати тесту. Моя самооцінка'
+    title: 'Результати тесту «Моя самооцінка»'
   },
   {
     id: 164,

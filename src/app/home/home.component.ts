@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
       }
     });
     this.service.current$.next(null);
-    this.pageTitle.setTitle(`Щоденник щасливих дівчат`)
+    this.pageTitle.setTitle(`Щоденник щасливих дівчат`);
 
   }
 }

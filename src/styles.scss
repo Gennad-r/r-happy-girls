@@ -65,7 +65,6 @@ app-home {
 }
 
 app-lesson {
-  overflow: hidden;
   display: block;
   width: 100%;
   vg-player {
@@ -92,11 +91,11 @@ app-lesson {
         background-color: $bg;
       }
     }
-  
+
     vg-scrub-bar-buffering-time .background {
       background-color: rgba($bg, .5);
     }
-  
+
     @media screen and (max-width: 600px) {
       vg-playback-button, vg-time-display[vgproperty="left"], vg-volume, vg-mute {
         display: none;

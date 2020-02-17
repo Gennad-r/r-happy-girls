@@ -8,9 +8,18 @@ import { ILesson } from '../I-lesson';
 })
 export class PdfComponent implements OnInit {
   @Input() item: ILesson;
+  angel = 0;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  rotate() {
+    if (this.angel !== 360) {
+      this.angel += 90;
+    } else {
+      this.angel = 0;
+    }
   }
 
 }
