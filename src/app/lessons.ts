@@ -67,7 +67,7 @@ export const data: ILesson[] = [
   {
     id: 123,
     url: 'audiozapys-do-tekhniky-avtobiohrafiia',
-    source: 'assets/S_117',
+    source: 'assets/S_123',
     type: 1,
     title: 'Аудіозапис до техніки. Автобіографія'
   },
