@@ -18,6 +18,12 @@
 
 .home {
     cursor: pointer;
+    u {
+      text-decoration: none;
+      display: inline-block;
+      border-bottom: 1px solid #fff;
+      padding: 2px 0;
+    }
 }
 
 @media screen and (max-width:768px) {
