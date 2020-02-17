@@ -45,6 +45,4 @@ testem.log
 .DS_Store
 Thumbs.db
 
-src/assets/*.mp4
-src/assets/*.pdf
-src/assets/*.ogg
+
