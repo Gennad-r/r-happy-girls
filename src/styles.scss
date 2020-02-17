@@ -2,11 +2,7 @@
 @import '../node_modules/font-awesome/css/font-awesome.min.css';
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400&display=swap&subset=cyrillic');
 @import '../node_modules/bootstrap/scss/bootstrap-grid.scss';
-
-* {
-  --bg-color: #03b9ac;
-  --dark: #00ae9d;
-}
+@import 'vars';
 
 html,
 body {
@@ -24,13 +20,11 @@ app-root {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  background: repeating-radial-gradient(
-    circle,
-    var(--dark),
-    var(--dark) 10px,
-    var(--bg-color) 10px, 
-    var(--bg-color) 20px
-);
+  background: repeating-radial-gradient(circle,
+      darken($bg, 5%),
+      darken($bg, 5%) 10px,
+      $bg 10px,
+      $bg 20px);
 }
 
 .main-content {
@@ -47,11 +41,13 @@ app-root {
   min-width: 100px;
   display: inline-block;
   margin-left: auto;
-  background-color: var(--bg-color);
+  background-color: darken($bg, 10);
   color: #fff;
-  transition: box-shadow 0.3s;
+  transition: 0.3s;
+
   &:hover {
     box-shadow: 0 0 5px rgba(#000, 0.7);
+    background-color: darken($bg, 20);
   }
 }
 
@@ -60,13 +56,54 @@ h1 {
 }
 
 app-home {
-  background-image: url(assets/img/girl.svg);
+  @media screen and (min-width:769px) {
+    background-image: url(assets/img/girl.svg);
+  }
   background-repeat: no-repeat;
   background-position: center bottom;
   margin-bottom: -20px;
 }
 
 app-lesson {
+  overflow: hidden;
   display: block;
   width: 100%;
+  vg-player {
+    vg-scrub-bar.strike {
+      transition: bottom 1s;
+    }
+    vg-controls {
+      background-color: darken($bg, 10);
+      transition: all 1s;
+    }
+
+    &.play {
+      vg-scrub-bar.strike {
+        bottom: 0;
+      }
+      vg-controls {
+        bottom: -50px;
+        opacity: 0;
+      }
+    }
+
+    vg-scrub-bar-current-time {
+      .background {
+        background-color: $bg;
+      }
+    }
+  
+    vg-scrub-bar-buffering-time .background {
+      background-color: rgba($bg, .5);
+    }
+  
+    @media screen and (max-width: 600px) {
+      vg-playback-button, vg-time-display[vgproperty="left"], vg-volume, vg-mute {
+        display: none;
+      }
+      vg-controls {
+        font-size: 0.8rem;
+      }
+    }
+  }
 }

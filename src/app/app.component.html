@@ -1,4 +1,15 @@
 <app-header></app-header>
+<div *ngIf="current" class="breadcrumbs">
+  <div class="container">
+    <span class="home" [routerLink]="['/']">
+      <i class="fa fa-home"></i>&nbsp;Головна
+    </span>
+    <i class="small">&gt;</i> 
+    <span class="p-name">
+      {{current}}
+    </span>
+  </div>
+</div>
 <div class="container main-content">
   <router-outlet></router-outlet>
 </div>

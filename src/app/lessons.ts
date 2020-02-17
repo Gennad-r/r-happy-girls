@@ -11,7 +11,7 @@ export const data: ILesson[] = [
   {
     id: 25,
     url: 'videozaniattia-z-literynhu',
-    source: 'assets/S_25.mp4',
+    source: 'assets/S_25',
     type: 0,
     title: 'Відеозаняття з літерингу'
   },
@@ -25,7 +25,7 @@ export const data: ILesson[] = [
   {
     id: 32,
     url: 'maister-klas-iz-pakuvannia-podarunkiv',
-    source: 'assets/S_32.mp4',
+    source: 'assets/S_32',
     type: 0,
     title: 'Майстер-клас із пакування подарунків'
   },
@@ -39,14 +39,14 @@ export const data: ILesson[] = [
   {
     id: 44,
     url: 'maister-klas-zi-skrapbukinhu-lystivky',
-    source: 'assets/S_44.mp4',
+    source: 'assets/S_44',
     type: 0,
     title: 'Майстер-клас зі скрапбукінгу листівки'
   },
   {
     id: 54,
     url: 'audiozapys-do-tekhniky-moie-bezpechne-mistse',
-    source: 'assets/S_54.ogg',
+    source: 'assets/S_54',
     type: 1,
     title: 'Аудіозапис до техніки. Моє безпечне місце'
   },
@@ -60,14 +60,14 @@ export const data: ILesson[] = [
   {
     id: 117,
     url: 'maister-klas-zi-sketchynhu',
-    source: 'assets/S_117.mp4',
+    source: 'assets/S_117',
     type: 0,
     title: 'Майстер-клас зі скетчингу'
   },
   {
     id: 123,
     url: 'audiozapys-do-tekhniky-avtobiohrafiia',
-    source: 'assets/S_117.ogg',
+    source: 'assets/S_117',
     type: 1,
     title: 'Аудіозапис до техніки. Автобіографія'
   },
@@ -81,7 +81,7 @@ export const data: ILesson[] = [
   {
     id: 142,
     url: 'maister-klas-zi-stvorennia-kulinarnoi-skrynky',
-    source: 'assets/S_142.mp4',
+    source: 'assets/S_142',
     type: 0,
     title: 'Майстер-клас зі створення кулінарної скриньки'
   },
@@ -95,7 +95,7 @@ export const data: ILesson[] = [
   {
     id: 164,
     url: 'maister-klas-iz-airys-foldynhu',
-    source: 'assets/S_164.mp4',
+    source: 'assets/S_164',
     type: 0,
     title: 'Майстер-клас із айрис-фолдингу'
   }

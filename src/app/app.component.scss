@@ -1,4 +1,29 @@
+@import '../vars';
+
 .main-content {
     display: flex;
     padding-bottom: 20px;
+}
+.breadcrumbs {
+    padding: 10px 0;
+    background-color: rgba($bg, .8);
+    color: #fff;
+}
+
+.small {
+    font-style: normal;
+    display: inline-block;
+    margin: 0 7px;
+}
+
+.home {
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .p-name {
+        display: block;
+        margin-top: 0.7rem;
+        font-size: 0.8rem;
+    }
 }

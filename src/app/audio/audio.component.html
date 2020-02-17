@@ -21,6 +21,7 @@
     </vg-controls>
 
     <audio #media [vgMedia]="media" id="myAudio" preload="auto">
-      <source [src]="item.source" type="audio/ogg">
+      <source [src]="item.source + '.ogg'" type="audio/ogg">
+      <source [src]="item.source + '.mp3'" type="audio/mp3">
     </audio>
 </vg-player>

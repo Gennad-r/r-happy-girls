@@ -1,3 +1,5 @@
+@import '../../vars';
+
 .lessons {
   .inner-card {
     display: flex;
@@ -10,7 +12,7 @@
       background-color: #fff;
       box-shadow: 0 0 5px rgba(#000, 0.3);
       .icon {
-        color: var(--dark);
+        color: darken($bg, 5);
       }
     }
   }

@@ -1,7 +1,26 @@
+@import '../../vars';
+
 .header {
-    background-color: var(--dark);
-    padding-top: 15px;
-    padding-bottom: 15px;
-    box-shadow: 0 0 5px rgba(#000, 0.7);
-    
+  background-color: darken($bg, 5);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: 0 0 5px rgba(#000, 0.7);
+}
+
+.logo {
+  display: block;
+  max-width: 155px;
+  @media screen and (max-width:768px) {
+      max-width: 100px;
+      margin: 0 auto;
+      margin-bottom: 0.5rem;
+  }
+}
+.head-text {
+    width: 100%;
+    display: block;
+}
+.name {
+    display: flex;
+    justify-content: flex-end;
 }
