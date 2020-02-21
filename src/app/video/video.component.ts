@@ -8,33 +8,7 @@ import { Subscription } from 'rxjs';
   templateUrl: './video.component.html',
   styleUrls: ['./video.component.scss']
 })
-export class VideoComponent implements OnInit, OnDestroy {
+export class VideoComponent {
 @Input() item: ILesson;
-api:VgAPI;
-playing = false;
-subs: Subscription[] = [];
-
   constructor() { }
-
-  ngOnInit(): void {
-  }
-
-  ngOnDestroy() {
-    this.subs.forEach(s => s.unsubscribe());
-  }
-
-  onPlayerReady(api: VgAPI) {
-    this.api = api;
-    const paused = this.api.getDefaultMedia().subscriptions.pause
-      .subscribe(() => {
-        this.playing = false;
-      });
-    this.subs.push(paused);
-
-    const started = this.api.getDefaultMedia().subscriptions.play
-      .subscribe(() => {
-        this.playing = true;
-      });
-    this.subs.push(started);
-  }
 }

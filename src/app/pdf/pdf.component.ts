@@ -15,11 +15,7 @@ export class PdfComponent implements OnInit {
   }
 
   rotate() {
-    if (this.angel !== 360) {
-      this.angel += 90;
-    } else {
-      this.angel = 0;
-    }
+    this.angel = !!this.angel ? 0 : 90;
   }
 
 }

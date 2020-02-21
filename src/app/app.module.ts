@@ -3,14 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClientModule }    from '@angular/common/http'
+// tslint:disable-next-line: import-spacing
+import { HttpClientModule } from '@angular/common/http';
 
 // videogular
 import {VgCoreModule} from 'videogular2/compiled/core';
 import {VgControlsModule} from 'videogular2/compiled/controls';
-import {VgOverlayPlayModule} from 'videogular2/compiled/overlay-play';
-import {VgBufferingModule} from 'videogular2/compiled/buffering';
-
 // pdf
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 
@@ -26,7 +24,6 @@ import { LessonComponent } from './lesson/lesson.component';
 @NgModule({
   declarations: [
     AppComponent,
-    AppComponent,
     HeaderComponent,
     FooterComponent,
     VideoComponent,
@@ -41,7 +38,6 @@ import { LessonComponent } from './lesson/lesson.component';
     BrowserModule,
     VgCoreModule,
     VgControlsModule,
-    VgOverlayPlayModule,
     PdfViewerModule,
     HttpClientModule
   ],

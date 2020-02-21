@@ -73,17 +73,6 @@ app-lesson {
     }
     vg-controls {
       background-color: darken($bg, 10);
-      transition: all 1s;
-    }
-
-    &.play {
-      vg-scrub-bar.strike {
-        bottom: 0;
-      }
-      vg-controls {
-        bottom: -50px;
-        opacity: 0;
-      }
     }
 
     vg-scrub-bar-current-time {
