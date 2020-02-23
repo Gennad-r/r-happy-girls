@@ -1,7 +1,5 @@
 export interface ILesson {
   id: number;
-  url?: string;
-  source: string;
-  type: number;
+  url: string;
   title: string;
 }

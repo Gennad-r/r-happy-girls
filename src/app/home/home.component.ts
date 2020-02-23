@@ -22,28 +22,9 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.lessons.forEach(el => {
-      switch (el.type) {
-        case 0:
-          this.misk.push({
-            class: 'fa-video-camera',
-          });
-          break;
-        case 1:
-          this.misk.push({
-            class: 'fa-play',
-          });
-          break;
-        case 2:
-          this.misk.push({
-            class: 'fa-file-pdf-o',
-          });
-          break;
-        default:
-      }
-    });
+    
     this.service.current$.next(null);
-    this.pageTitle.setTitle(`Щоденник щасливих дівчат`);
+    this.pageTitle.setTitle(`Три дні з життя Єви`);
 
   }
 }

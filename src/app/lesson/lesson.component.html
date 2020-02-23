@@ -1,12 +1,2 @@
 
-<ng-template [ngIf]="item">
-  <ng-template [ngIf]="item.type === 0">
-    <app-video [item]="item"></app-video>
-  </ng-template>
-  <ng-template [ngIf]="item.type === 1">
-    <app-audio [item]="item"></app-audio>
-  </ng-template>
-  <ng-template [ngIf]="item.type === 2">
-    <app-pdf [item]="item"></app-pdf>
-  </ng-template>
-</ng-template>
+<app-audio [item]="item"></app-audio>

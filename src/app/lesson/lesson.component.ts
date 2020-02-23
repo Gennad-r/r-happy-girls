@@ -30,8 +30,8 @@ export class LessonComponent implements OnInit {
         this.router.navigate(['/']);
         this.service.current$.next(null);
       }
-      this.service.current$.next(`Сторінка ${this.item.id} - ${this.item.title}`);
-      this.pageTitle.setTitle(`Щоденник щасливих дівчат - ${this.item.title}`);
+      this.service.current$.next(`Розділ ${this.item.id}. ${this.item.title}`);
+      this.pageTitle.setTitle(`Три дні з життя Єви - ${this.item.title}`);
     });
   }
 

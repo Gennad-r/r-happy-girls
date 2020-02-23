@@ -20,11 +20,14 @@ app-root {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  background: repeating-radial-gradient(circle,
-      darken($bg, 5%),
-      darken($bg, 5%) 10px,
-      $bg 10px,
-      $bg 20px);
+ 
+
+  background:
+linear-gradient(63deg, darken($bg, 5%) 23%, transparent 23%) 7px 0,
+linear-gradient(63deg, transparent 74%, darken($bg, 5%) 78%),
+linear-gradient(63deg, transparent 34%, darken($bg, 5%) 38%, darken($bg, 5%) 58%, transparent 62%),
+$bg;
+background-size: 8px 24px;
 }
 
 .main-content {
@@ -57,20 +60,24 @@ h1 {
 
 app-home {
   @media screen and (min-width:769px) {
-    background-image: url(assets/img/girl.svg);
+    background-image: url(assets/img/home-bg.png);
   }
+
   background-repeat: no-repeat;
   background-position: center bottom;
   margin-bottom: -20px;
+  background-size: contain;
 }
 
 app-lesson {
   display: block;
   width: 100%;
+
   vg-player {
     vg-scrub-bar.strike {
       transition: bottom 1s;
     }
+
     vg-controls {
       background-color: darken($bg, 10);
     }
@@ -86,9 +93,14 @@ app-lesson {
     }
 
     @media screen and (max-width: 600px) {
-      vg-playback-button, vg-time-display[vgproperty="left"], vg-volume, vg-mute {
+
+      vg-playback-button,
+      vg-time-display[vgproperty="left"],
+      vg-volume,
+      vg-mute {
         display: none;
       }
+
       vg-controls {
         font-size: 0.8rem;
       }

@@ -9,15 +9,10 @@ import { HttpClientModule } from '@angular/common/http';
 // videogular
 import {VgCoreModule} from 'videogular2/compiled/core';
 import {VgControlsModule} from 'videogular2/compiled/controls';
-// pdf
-import { PdfViewerModule } from 'ng2-pdf-viewer';
-
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { VideoComponent } from './video/video.component';
 import { AudioComponent } from './audio/audio.component';
-import { PdfComponent } from './pdf/pdf.component';
 import { HomeComponent } from './home/home.component';
 import { LessonComponent } from './lesson/lesson.component';
 
@@ -26,9 +21,7 @@ import { LessonComponent } from './lesson/lesson.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    VideoComponent,
     AudioComponent,
-    PdfComponent,
     HomeComponent,
     LessonComponent
   ],
@@ -38,7 +31,6 @@ import { LessonComponent } from './lesson/lesson.component';
     BrowserModule,
     VgCoreModule,
     VgControlsModule,
-    PdfViewerModule,
     HttpClientModule
   ],
   providers: [],
