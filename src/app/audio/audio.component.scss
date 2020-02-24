@@ -1,8 +1,20 @@
-.cover {
-    height: 0;
-    padding-top: 34%;
-    background-image: url(../../assets/img/andriy.jpg);
-    background-size: 65%;
-    background-position: center bottom;
-    background-repeat: no-repeat;
+@import '../../vars.scss';
+
+.cover-holder {
+  position: relative;
+  img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+  marquee {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    color: #fff;
+    background: rgba($bg, 0.9);
+  }
 }
