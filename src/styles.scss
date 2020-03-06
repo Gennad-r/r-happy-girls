@@ -20,7 +20,7 @@ app-root {
   display: flex;
   flex-direction: column;
   min-height: 100%;
- 
+
 
   background:
 linear-gradient(63deg, darken($bg, 5%) 23%, transparent 23%) 7px 0,
@@ -85,6 +85,18 @@ app-lesson {
     vg-scrub-bar-current-time {
       .background {
         background-color: $bg;
+      }
+    }
+
+    vg-volume {
+      .volumeBackground {
+        background-color: $bg;
+      }
+      .volumeValue {
+        opacity: 0.5;
+        border-radius: 2px;
+        background-color: $bg;
+        border: 1px solid #fff;
       }
     }
 
